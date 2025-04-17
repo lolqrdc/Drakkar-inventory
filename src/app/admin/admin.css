@@ -1,0 +1,44 @@
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .admin-header {
+    background-color: #1e293b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .admin-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .admin-sidebar {
+    width: 200px;
+    background-color: #f3f4f6;
+    padding: 1rem;
+  }
+  
+  .admin-main {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .stock-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .stock-table th,
+  .stock-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+  }
+  
+  .stock-table th {
+    background-color: #f3f4f6;
+  }
+  
