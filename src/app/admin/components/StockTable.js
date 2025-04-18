@@ -1,35 +1,52 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { listProducts } from '../../api/catalog/listProducts';
 import EditModal from './EditModal';
 
 export default function StockTable() {
-    const [products, setProducts] = useState([
-        { id: 1, name: 'Produit A', stock: 10, price: 0.50 },
-        { id: 2, name: 'Produit B', stock: 20, price: 3.5 },
-    ]);
-
+    const [products, setProducts] = useState([]);
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const openEditModal = (product) => {
-        setSelectedProduct(product);
-        setIsModalOpen(true);
-    };
+    // Appel API pour récupérer les produits
+    useEffect(() => {
+        async function fetchProducts() 
+        {
+            try 
+            {
+                const data = await listProducts();
+                setProducts(data.objects || []); // Adaptez selon la structure de la réponse API
+            } catch (error) 
+            {
+                console.error('Erreur lors de la récupération des produits :', error);
+            }
+        }
 
-    const closeEditModal = () => {
-        setSelectedProduct(null);
-        setIsModalOpen(false);
-    };
+        fetchProducts();
+    }, []);
 
-    const handleProductUpdate = (updatedProduct) => {
-        setProducts((prevProducts) =>
-            prevProducts.map((product) =>
-                product.id === updatedProduct.id ? updatedProduct : product
-            )
-        );
-        closeEditModal();
-    };
+    const openEditModal = (product) => 
+        {
+            setSelectedProduct(product);
+            setIsModalOpen(true);
+        };
+
+    const closeEditModal = () => 
+        {
+            setSelectedProduct(null);
+            setIsModalOpen(false);
+        };
+
+    const handleProductUpdate = (updatedProduct) => 
+        {
+            setProducts((prevProducts) =>
+                prevProducts.map((product) =>
+                    product.id === updatedProduct.id ? updatedProduct : product
+                )
+            );
+            closeEditModal();
+        };
 
     return (
         <>
