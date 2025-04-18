@@ -2,9 +2,9 @@
   <img src="src/app/favicon.ico" alt="Drakkar Logo" width="100">
 </p>
 
-# 🛡️ Drakkar Inventory
+# Drakkar Inventory
 
-Drakkar Inventory est une application web moderne conçue pour gérer l'inventaire de l'association étudiante **DRAKKAR**. Ce projet vise à simplifier la gestion des stocks et à offrir une interface intuitive pour les membres de l'association ainsi que pour les clients.
+Drakkar Inventory a été conçue pour gérer l'inventaire de l'association étudiante **DRAKKAR** de 42 Le Havre. Ce projet vise à simplifier la gestion des stocks et à offrir une interface intuitive pour les membres de l'association ainsi que pour les étudiant(e)s.
 
 ---
 
@@ -16,23 +16,23 @@ L'objectif principal de Drakkar Inventory est de fournir une solution efficace p
   - Gérer le stock des produits (ajout, modification, suppression).
   - Synchroniser les données avec l'API de Square pour maintenir un inventaire à jour.
 
-- **Clients** :
+- **Etudiant(e)s** :
   - Consulter les produits disponibles en stock.
   - Voir les prix des produits avant de passer commande.
 
 ---
 
-## ✨ Fonctionnalités principales
+## Fonctionnalités principales
 
 ### 🔑 Vue Administrateur
 - Accès sécurisé réservé aux membres de l'association.
 - Gestion complète du stock.
 - Intégration avec l'API de Square pour synchroniser les données en temps réel.
 
-### 🛒 Vue Client
+### 🛒 Vue Etudiant(e)s
 - Consultation des produits disponibles.
 - Affichage des prix des articles.
-- Interface simple et intuitive pour une navigation fluide.
+- Interface simple et intuitive pour pouvoir naviguer et passer commande.
 
 ---
 
