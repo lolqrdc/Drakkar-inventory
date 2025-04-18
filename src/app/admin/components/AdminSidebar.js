@@ -1,12 +1,10 @@
-export default function AdminSidebar ()
-{
+export default function AdminSidebar() {
     return (
         <aside className="admin-sidebar">
-            <ul>
-                <li><a href="/admin">Dashboard</a></li>
-                <li><a href="/admin/productts"> Produits</a></li>
-                <li><a href="/admin/settings"> Paramètres</a></li>
-            </ul>
+            <div className="sidebar-buttons">
+                <a href="/" className="home-button">Accueil</a>
+                <button className="logout-button">Déconnexion</button>
+            </div>
         </aside>
     );
 }
