@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./favicon.ico" alt="Drakkar Logo" width="100">
+  <img src="src/app/favicon.ico" alt="Drakkar Logo" width="100">
 </p>
 
 # 🛡️ Drakkar Inventory
