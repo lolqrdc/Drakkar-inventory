@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="./favicon.ico" alt="Drakkar Logo" width="100">
+</p>
 
-## Getting Started
+# 🛡️ Drakkar Inventory
 
-First, run the development server:
+Drakkar Inventory est une application web moderne conçue pour gérer l'inventaire de l'association étudiante **DRAKKAR**. Ce projet vise à simplifier la gestion des stocks et à offrir une interface intuitive pour les membres de l'association ainsi que pour les clients.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Objectif du projet
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+L'objectif principal de Drakkar Inventory est de fournir une solution efficace pour deux types d'utilisateurs :
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Administrateurs (membres de l'association)** :
+  - Gérer le stock des produits (ajout, modification, suppression).
+  - Synchroniser les données avec l'API de Square pour maintenir un inventaire à jour.
 
-## Learn More
+- **Clients** :
+  - Consulter les produits disponibles en stock.
+  - Voir les prix des produits avant de passer commande.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Fonctionnalités principales
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🔑 Vue Administrateur
+- Accès sécurisé réservé aux membres de l'association.
+- Gestion complète du stock.
+- Intégration avec l'API de Square pour synchroniser les données en temps réel.
 
-## Deploy on Vercel
+### 🛒 Vue Client
+- Consultation des produits disponibles.
+- Affichage des prix des articles.
+- Interface simple et intuitive pour une navigation fluide.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Technologies utilisées
+
+- **Frontend** : Next.js et React.js.
+- **API externe** : Intégration avec l'API de Square.
+- **Styles** : Tailwind CSS pour le design.
+
+---
+
+## 🚀 Installation et démarrage
+
+1. **Clonez le dépôt** :
+   ```bash
+   git clone <url-du-repo>
+   cd drakkar-inventory
+   ```
+
+2. **Installez les dépendances** :
+   ```bash
+   npm install
+   ```
+
+3. **Configurez les variables d'environnement** :
+   Créez un fichier `.env` à la racine du projet et ajoutez les clés nécessaires :
+   ```env
+   SQUARE_API_KEY=<votre-clé-api-square>
+   ```
+
+4. **Lancez l'application en mode développement** :
+   ```bash
+   npm run dev
+   ```
+
+5. **Accédez à l'application** :
+   Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+
+---
